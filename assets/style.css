@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/* @font-face {
+    font-family: 'googlefont';
+    src:  url('./Parisienne-Regular.ttf') format('ttf');
+  } */
+  
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 3em 0 5em;
+    text-align: center;
+    background-color: #b2564c;
+    color: #fff;
+    background-image: url('./background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:multiply;
+}
+/* 
+h2 {
+   padding: auto auto;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+/* remove */
+
+.navigation {
+    margin-bottom: 3em;
+}
+
+/* ul */
+/* .nav-list { */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+
+/* li */
+.nav-item {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-link {
+    display: block;
+    padding: 1em;
+    color:#fff;
+    font-size: large;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color:thistle;
+}
+.avatar {
+    width: 125px;
+    border-radius: 50%;
+    border: solid white 7px;
+}
+.title {
+    display: block;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0 hsla(0 , 0% , 0% , 0.5);
+    /* color: #fff; */
+}
+
+.bio {
+    font-size: 24px;
+    text-transform: capitalize;
+    /* color: #fff; */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: white;
+    color: #b2564c;
+    text-decoration: none;
+    font: bold;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 1px 0.5px rgba(245, 240, 245, 0.486);
+}
+
+/* Projects style */
+.projects {
+    padding: 0;
+    margin: 0;
+
+}
+
+.projects-list {
+    width: 80%;
+    /* background-color: crimson; */
+    margin: 80px auto;
+    padding: 0;
+}
+
+.project{
+    display: inline-block;
+    width: 21%;
+    margin: 10px 1.8%;
+    list-style-type: none;
+}
+.project img {
+    display: block;
+    max-width: 100% ;
+    border-radius: 6px;
+    border-style:solid;
+    border-color: rgba(224, 175, 152, 0.945);
+    cursor: pointer;
+}
+
+.project img.active {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(2);
+}
+
+
+
+/* ////////////// */
+.socials{
+    background-color: #39414c;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.twitter-message{
+    width: 40%;
+    color: #fff;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+.twitter-btn{
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: rgba(36, 142, 230, 0.89);
+    color: #fff;
+    text-decoration: none;
+    font: bold;
+    border-radius: 0.5em;
+    /* box-shadow: 1px 1px 1px 0.5px rgba(245, 240, 245, 0.486); */
+}
+
+/* //////////////// */
+.footer{
+    width: 80%;
+    margin: auto ;
+    padding: 30px 0;
+}
+
+.copyright{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    color: gray;
+}
+
+.social-list{
+    display: inline-block;
+    width: 49%;
+    margin:0;
+    padding: 0;
+}
+
+.social-item{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.social-link{
+    color: gray;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* About me styles */
+.box{
+    max-width: 900px; /*900px*/
+    margin: 20px auto;
+    font-size: 20px;
+    
+}
+/* Contact me styles */
+.form{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* .form-line{
+
+} */
+
+.label{
+    color:rgba(87, 86, 86, 0.747);
+    text-transform: capitalize;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 8px;
+    border: 1px solid #e47f0b;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.form-button{
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #da8b67;
+    color: #fff;
+
+}
+
+.hours{
+    width: 400px;
+    margin: 100px auto 0;
+    border: 2px solid #b2564c;
+    color: #000;
+    border-collapse: collapse;
+}
+
+.hours caption{
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hours td,
+.hours th {
+    border: 1px solid #da8b67;
+    padding: 5px 10px;
+}
+
+.hours td {
+    text-align: center;
+}
+.hours tr:nth-child(odd){
+    background-color: #fcc586;
+}
